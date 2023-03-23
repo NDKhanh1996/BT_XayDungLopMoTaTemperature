@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Temperature {
+    c;
+    f;
+    k;
+    constructor(c,f,k) {
+      this.c = c
+      this.f = f
+      this.k = k
+    }
+    Change(){
+      this.f = this.c * 9/5 + 32
+      this.k = this.c + 273.15
+      // document.write('Độ F là ' + this.f + '<br>')
+      // document.write('Độ K là ' + this.k)
+    }
+  }
+  let Temp1 = new Temperature(25)
+  // let TempC = Temp1.c
+  // let TempF = Temp1.f
+  // let TempK = Temp1.k
+          Temp1.Change()
+  document.write('Độ F là ' + Temp1.f + '<br>')
+  document.write('Độ K là ' + Temp1.k)
+  // document.write(Temp1.f)
+  // document.write('Độ C là ' + TempC + '<br>')
+  // document.write('Độ F là ' + TempF + '<br>')
+  // document.write('Độ K là ' + TempK)
+  // document.write(Change1)
+
+</script>
+</body>
+</html>
